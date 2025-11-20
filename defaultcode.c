@@ -1,4 +1,4 @@
-#define busyled1 2
+#define busyled1 2 // onboard led
 
 void busyState(bool state) {
   if (state) {
@@ -10,6 +10,9 @@ void busyState(bool state) {
 
 void setup() {
   pinMode(busyled1, OUTPUT);
+  busyState(true); // Busy Light Setup ^^^
+
+  busyState(false); // Final Line
 }
 
 void loop() {
